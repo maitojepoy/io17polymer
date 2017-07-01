@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Stafford Briggs",
+    "photo": "/data/men/1.jpg"
+  },
+  {
+    "name": "Velazquez Lewis",
+    "photo": "/data/women/1.jpg"
+  },
+  {
+    "name": "Jaime Perkins",
+    "photo": "/data/men/2.jpg"
+  },
+  {
+    "name": "Ashley Hahn",
+    "photo": "/data/women/2.jpg"
+  },
+  {
+    "name": "Robert Rosales",
+    "photo": "/data/men/3.jpg"
+  },
+  {
+    "name": "Vicky Goodman",
+    "photo": "/data/women/3.jpg"
+  },
+  {
+    "name": "Kayla Robbins",
+    "photo": "/data/women/4.jpg"
+  },
+  {
+    "name": "Albert Odonnell",
+    "photo": "/data/men/4.jpg"
+  },
+  {
+    "name": "Barrett Mcclain",
+    "photo": "/data/men/5.jpg"
+  },
+  {
+    "name": "Beverly Norman",
+    "photo": "/data/women/5.jpg"
+  },
+  {
+    "name": "Marion Henderson",
+    "photo": "/data/women/6.jpg"
+  }
+]

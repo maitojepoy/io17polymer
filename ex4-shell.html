@@ -1,0 +1,23 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<dom-module id="ex4-shell">
+	<template>
+		<style>
+			:host {
+				display: block;
+				width: 100vw;
+				height: 100vh;
+			}
+		</style>
+		<template is="dom-repeat" items="{{names}}">
+		
+		</template>
+	</template>
+	<script>
+		Polymer({
+			is: 'ex4-shell',
+			properties: {
+				names: Array
+			}
+		});
+	</script>
+</dom-module>

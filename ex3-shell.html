@@ -1,0 +1,30 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<dom-module id="ex3-shell">
+	<template>
+		<style>
+			:host {
+				display: block;
+				width: 100vw;
+				height: 100vh;
+			}
+		</style>
+
+	</template>
+	<script>
+		Polymer({
+			is: 'ex3-shell',
+			properties: {
+				names: {
+					type: Array,
+					value: [
+						"Doc", "Grumpy", "Happy", "Sleepy", 
+						"Bashful", "Sneezy", "Dopey"
+					]
+				}
+			},
+			addClicked: function () {
+				
+			}
+		});
+	</script>
+</dom-module>

@@ -1,0 +1,26 @@
+<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/paper-styles/shadow.html">
+<dom-module id="name-card">
+	<template>
+		<style>
+			:host {
+				display: inline-block;
+				padding: 10px;
+				@apply(--shadow-elevation-2dp);
+			}
+			:host h2 {
+				margin: 0;
+				font-size: 18px;
+			}
+		</style>
+		<h2>{{name}}</h2>
+	</template>
+	<script>
+		Polymer({
+			is: 'name-card',
+			properties: {
+				name: String
+			}
+		});
+	</script>
+</dom-module>
