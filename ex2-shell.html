@@ -1,4 +1,4 @@
-<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/polymer/polymer-element.html">
 <dom-module id="ex2-shell">
 	<template>
 		<style>
@@ -10,8 +10,15 @@
 		</style>
 	</template>
 	<script>
-		Polymer({
-			is: 'ex2-shell'
-		});
+		class Ex2Shell extends Polymer.Element {
+			static get is() {
+				return 'ex2-shell';
+			}
+			static get properties() {
+				return {  };
+			}
+			
+		}
+		customElements.define(Ex2Shell.is, Ex2Shell);
 	</script>
 </dom-module>

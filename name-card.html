@@ -1,4 +1,4 @@
-<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/polymer/polymer-element.html">
 <link rel="import" href="bower_components/paper-styles/shadow.html">
 <dom-module id="name-card">
 	<template>
@@ -6,7 +6,7 @@
 			:host {
 				display: inline-block;
 				padding: 10px;
-				@apply(--shadow-elevation-2dp);
+				@apply --shadow-elevation-2dp;
 			}
 			:host h2 {
 				margin: 0;
@@ -16,11 +16,16 @@
 		<h2>{{name}}</h2>
 	</template>
 	<script>
-		Polymer({
-			is: 'name-card',
-			properties: {
-				name: String
+		class NameCard extends Polymer.Element {
+			static get is() {
+				return 'name-card';
 			}
-		});
+			static get properties() {
+				return {
+					name: String
+				};
+			}
+		}
+		customElements.define(NameCard.is, NameCard);
 	</script>
 </dom-module>

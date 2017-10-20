@@ -1,4 +1,4 @@
-<link rel="import" href="bower_components/polymer/polymer.html">
+<link rel="import" href="bower_components/polymer/polymer-element.html">
 <dom-module id="ex4-shell">
 	<template>
 		<style>
@@ -8,16 +8,18 @@
 				height: 100vh;
 			}
 		</style>
-		<template is="dom-repeat" items="{{names}}">
-		
-		</template>
 	</template>
 	<script>
-		Polymer({
-			is: 'ex4-shell',
-			properties: {
-				names: Array
+		class Ex4Shell extends Polymer.Element {
+			static get is() {
+				return 'ex4-shell';
 			}
-		});
+			static get properties() {
+				return {
+					names: Array
+				};
+			}
+		}
+		customElements.define(Ex4Shell.is,Ex4Shell);
 	</script>
 </dom-module>
